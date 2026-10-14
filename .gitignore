@@ -1,0 +1,11 @@
+/target/
+*.exe
+*.pdb
+*.zip
+/.env
+/.env.*
+/ANALISI-REA.md
+/REA-evidence.json
+/Command-inventory.json
+/Resource-inventory.json
+/NOTE-TECNICHE-2026-10-14.md

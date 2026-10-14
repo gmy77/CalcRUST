@@ -1,0 +1,27 @@
+[package]
+name = "wincalc-rust"
+version = "2.0.0"
+edition = "2021"
+description = "Native Rust calculator for Windows with light and dark themes, scientific math, programmer tools and converters"
+repository = "https://github.com/gmy77/CalcRUST"
+readme = "README.md"
+publish = false
+
+[[bin]]
+name = "wincalc-rust"
+path = "src/main.rs"
+
+[dependencies]
+eframe = { version = "0.31.1", default-features = false, features = ["default_fonts", "glow", "persistence", "accesskit"] }
+egui_plot = "0.32.1"
+chrono = "0.4"
+serde = { version = "1", features = ["derive"] }
+reqwest = { version = "0.12", default-features = false, features = ["blocking", "rustls-tls"] }
+image = { version = "0.25", default-features = false, features = ["png"] }
+num-bigint = "0.4"
+num-rational = "0.4"
+num-traits = "0.2"
+
+[profile.release]
+strip = true
+lto = "thin"

@@ -1,0 +1,11 @@
+{
+  "name": "Calcolatrice Rust",
+  "version": "2.0.0",
+  "release_date": "2026-10-14",
+  "platform": "Windows x86_64",
+  "executable": "Calcolatrice.exe",
+  "bytes": 9851904,
+  "sha256": "a1659d3d593363fed9367b67ee01d37d524da6c035ae321e161791ec5f4ebdd0",
+  "tests": { "offline_groups_passed": 13, "offline_failed": 0, "ecb_live_passed": true, "native_preview_scenarios_passed": 7 },
+  "limitations": "Not a complete behavioral or numerical parity certification with Microsoft Calculator. Transcendental functions and graphing use f64; graph analysis is sampled."
+}
